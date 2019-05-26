@@ -21,7 +21,9 @@ function createWindow() {
 //icon: 'assets/images/logo/logo-icon.png',
     show: false,
     /* , frame: false*/
-    nodeIntegration: true
+    webPreferences: {
+      nodeIntegration:true
+    }
   });
   // and load the index.html of the app.
   win.loadFile('html/index.html'); // Open the DevTools.

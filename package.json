@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/supunlakmal/electron-js-pc-idle-screen#readme",
   "dependencies": {
-    "electron": "^3.1.8",
+    "electron": "^5.0.2",
     "electron-reload": "^1.4.0"
   }
 }
