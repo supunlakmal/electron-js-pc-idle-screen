@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>App</title>
+    <title>Electron Screen Server</title>
+    <link href="../assets/css/bootstrap.min.css">
+    </link>
+    <link href="../assets/css/main.css">
+    </link>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/index.js"></script>
 </head>
+
 <body>
-    
+    <section>
+        <div class="container-fluid mainScreen">
+            <div class="row animation_apps">
+                <div class="col-3 run_animation" data-animation="rain_animation">rain animation</div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid animation" style="display: none;" id="run_animation_box"></div>
+    </section>
 </body>
+
 </html>

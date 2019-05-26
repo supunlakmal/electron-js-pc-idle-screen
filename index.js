@@ -27,7 +27,7 @@ function createWindow() {
   });
   // and load the index.html of the app.
   win.loadFile('html/index.html'); // Open the DevTools.
-  win.webContents.openDevTools();
+ //win.webContents.openDevTools();
   /*    var menu = Menu.buildFromTemplate([{
               label: '', submenu: [{
                   label: 'Log out'
@@ -43,9 +43,6 @@ function createWindow() {
 ipcMain.on('systemPage', () => {
   win.loadFile('html/index.html');
 });
-ipcMain.on('loginPage', () => {
-  win.loadFile('html/login.html');
-});
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -59,12 +56,6 @@ app.on('window-all-closed', () => {
   }
 });
 
-app.on('ready', () => {
-    electron.powerMonitor.querySystemIdleTime(function(data){
-console.log(data);
-
-    })
-  })
 
 
 app.on('activate', () => {
