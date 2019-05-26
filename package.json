@@ -1,0 +1,23 @@
+{
+  "name": "electron-js-pc-idle-screen",
+  "version": "0.0.1",
+  "description": "Run  Animation  when  PC  on idlel mode",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supunlakmal/electron-js-pc-idle-screen.git"
+  },
+  "author": "Supun Lakmal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supunlakmal/electron-js-pc-idle-screen/issues"
+  },
+  "homepage": "https://github.com/supunlakmal/electron-js-pc-idle-screen#readme",
+  "dependencies": {
+    "electron": "^3.1.8",
+    "electron-reload": "^1.4.0"
+  }
+}
