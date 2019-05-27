@@ -10,36 +10,29 @@ require('electron-reload')(__dirname);
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win;
-
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 1200,
-    height: 1000,
+    width: 800,
+    height: 800,
     minWidth: 800,
     minHeight: 800,
-//icon: 'assets/images/logo/logo-icon.png',
+    //icon: 'assets/images/logo/logo-icon.png',
     show: false,
-    /* , frame: false*/
     webPreferences: {
-      nodeIntegration:true
+      nodeIntegration: true
     }
   });
   // and load the index.html of the app.
   win.loadFile('html/index.html'); // Open the DevTools.
- //win.webContents.openDevTools();
-  /*    var menu = Menu.buildFromTemplate([{
-              label: '', submenu: [{
-                  label: 'Log out'
-              }]
-          }])*/
+// win.webContents.openDevTools();
+
   win.setMenu(null);
   win.once('ready-to-show', () => {
     win.show();
   });
 }
 
-// }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
 ipcMain.on('systemPage', () => {
   win.loadFile('html/index.html');
 });
@@ -55,14 +48,7 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-
-
 app.on('activate', () => {
-
-
-
-
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (win === null) {

@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Electron Screen Server</title>
-    <link href="../assets/css/bootstrap.min.css">
-    </link>
-    <link href="../assets/css/main.css">
-    </link>
+    <title>Electron JS Screen Server</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/index.js"></script>
 </head>
@@ -17,13 +15,20 @@
 <body>
     <section>
         <div class="container-fluid mainScreen">
-            <div class="row animation_apps">
-                <div class="col-3 run_animation" data-animation="rain_animation">rain animation</div>
+            <div class="row animation_apps hide_on_run">
+                <div class=" col-12 text-center ">
+                    <h3>Electron JS Screen Server</h3>
+                    <footer class="blockquote-footer">Click on image.</footer>
+                    <hr>
+                </div>
+                <div class="col-6 run_animation" data-animation="rain_animation" style="cursor: pointer;"><img
+                        src="../animation/rain_animation/img/Capture.PNG" style="
+                    width: 100%;
+                ">
+                </div>
             </div>
         </div>
-
-        
-        <div class="container-fluid animation" style="display: none;" id="run_animation_box"></div>
+        <div class=" animation" id="run_animation_box" style="display: none;"></div>
     </section>
 </body>
 

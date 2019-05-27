@@ -163,4 +163,4 @@ width: 70%;
 	.myL{font-size: 30px; 	margin-bottom: 50px;}
 	.code-box{margin-bottom: 10px;}
 
-	.hide_key{ width: 0px; height: 0px; left: 0; bottom: 0; position: absolute;}
+	.hide_key{  display: none;}

@@ -9,9 +9,9 @@
 
  function minimize() {
    remote.getCurrentWindow().setFullScreen(false);
-   $(".animation_apps").show();
+   $(".hide_on_run").show();
    $("#run_animation_box").html('');
-   remote.getCurrentWindow().minimize();
+   //  remote.getCurrentWindow().minimize();
    $("body").removeClass("run_animation_body");
  }
 
@@ -21,7 +21,7 @@
  $(document).ready(function (r) {
    $(".run_animation").click(function () {
      let animation_id = $(this).attr("data-animation");
-     $(".animation_apps").hide();
+     $(".hide_on_run").hide();
      $("#run_animation_box").show();
      $("#run_animation_box").load('../animation/rain_animation/index.html');
      fullScreen();
