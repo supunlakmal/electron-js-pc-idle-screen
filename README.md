@@ -1,4 +1,4 @@
-# electron-js-pc-idle-screen
+# Electron JS Screen Server
 Run  Animation when  PC  on Idle mode
 
 ### Setting up Electron Project
